@@ -1,5 +1,18 @@
 # RandevuTakip (BookPilot) - Değişiklik Günlüğü (Changelog)
 
+## [Phase 6 / Sprint 10] - Productization & Sales Kit - *TAMAMLANDI*
+
+- **Multi-Industry Demos**: Veritabanı seed işlemine üç farklı sektör (Diş Hekimi, Avukat, Güzellik Salonu) eklendi. Her birine özel renk temaları (`ThemeJson`) ve dinamik randevu formları (`BookingFormSchema`) tanımlandı.
+- **Demo Hesapları**: Geliştirme ve tanıtım süreçlerini kolaylaştırmak adına her tenant için (`admin@dentist.com`, `admin@lawyer.com`, vb.) varsayılan admin şifreleri entegre edildi.
+- **Dökümantasyon**: `README.md` içerisine sistem gereksinimleri, demo bilgileri, bilinen limitasyonlar ve gelecek yol haritası (Roadmap) eklendi. Ayrıca potansiyel müşterilere sistemi tanıtmak için `demo-script.md` dosyası oluşturuldu.
+
+## [Phase 5 / Sprint 09] - Deploy, CI/CD, Observability - *TAMAMLANDI*
+
+- **Production Deployment Packaging**: Proje için `docker-compose.yml` (API, PostgreSQL, Redis, Frontend ve NGINX dahil) ve production'a özel `Dockerfile`'lar oluşturuldu.
+- **NGINX Reverse Proxy**: 80 portu üzerinden HTTP isteklerini frontend ve backend servislerine (proxy_pass) yönlendiren, Gzip sıkıştırmalı `nginx.conf` yapılandırıldı.
+- **CI Pipeline (GitHub Actions)**: `.github/workflows/ci.yml` eklenerek projede kod master'a itildiğinde .NET ve Node.js için otomatik derleme (build) süreçleri aktifleştirildi.
+- **Observability**: `CorrelationIdMiddleware` ile her HTTP isteğine benzersiz bir `X-Correlation-Id` atanması sağlandı ve hata ayıklama süreçleri için loglara yansıtıldı.
+
 ## [2026-03-01] - Redis, Concurrency & Security Hardening (Sprint 08) - *TAMAMLANDI*
 
 - **Redis Altyapısı**: Projeye `StackExchange.Redis` entegre edildi ve `IDistributedCache` olarak yapılandırıldı.

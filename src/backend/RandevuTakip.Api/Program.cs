@@ -103,9 +103,11 @@ static void SeedDatabase(WebApplication app)
 {
     using var scope = app.Services.CreateScope();
     var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-    var tid = Guid.Parse("d0e3a6a1-a6a1-4a6a-a6a1-a6a1a6a1a6a1");
+    var tid = Guid.Parse("d0e3a6a1-a6a1-4a6a-a6a1-a6a1a6a1a6a1"); // Dentist
+    var lawyerTid = Guid.Parse("d0e3a6a1-a6a1-4a6a-a6a1-a6a1a6a1a6a2"); // Lawyer
+    var salonTid = Guid.Parse("d0e3a6a1-a6a1-4a6a-a6a1-a6a1a6a1a6a3"); // Salon
 
-    // Tenant
+    // Tenant: Dentist
     if (!db.Tenants.Any(t => t.Slug == "dentist"))
     {
         db.Tenants.Add(new Tenant
@@ -122,20 +124,65 @@ static void SeedDatabase(WebApplication app)
         db.SaveChanges();
     }
 
-    // Admin ve Staff Login Hesapları
-    if (!db.Admins.Any(a => a.Email == "admin@demo.com"))
+    // Tenant: Lawyer
+    if (!db.Tenants.Any(t => t.Slug == "lawyer"))
     {
-        db.Admins.Add(new Admin
+        db.Tenants.Add(new Tenant
         {
-            Id = Guid.NewGuid(),
-            TenantId = tid,
-            Email = "admin@demo.com",
-            PasswordHash = BCrypt.Net.BCrypt.HashPassword("admin123"),
-            Role = "Owner",
-            CreatedAt = DateTime.UtcNow
+            Id = lawyerTid,
+            Slug = "lawyer",
+            Name = "Örnek Hukuk Bürosu",
+            Industry = "Lawyer",
+            ThemeJson = "{\"primary\": \"#0f172a\", \"borderRadius\": \"0.5rem\"}",
+            BookingFormSchema = "[{\"name\": \"caseType\", \"type\": \"select\", \"label\": \"Dava Türü\", \"options\": [\"Ceza\", \"Boşanma\", \"Ticaret\", \"İş Hukuku\", \"Diğer\"], \"required\": true}, {\"name\": \"caseSummary\", \"type\": \"textarea\", \"label\": \"Konu Özeti\", \"required\": true}]",
+            CreatedAt = DateTime.UtcNow,
+            IsActive = true
         });
         db.SaveChanges();
     }
+
+    // Tenant: Salon
+    if (!db.Tenants.Any(t => t.Slug == "salon"))
+    {
+        db.Tenants.Add(new Tenant
+        {
+            Id = salonTid,
+            Slug = "salon",
+            Name = "Örnek Güzellik & Kuaför",
+            Industry = "Salon",
+            ThemeJson = "{\"primary\": \"#ec4899\", \"borderRadius\": \"2rem\"}",
+            BookingFormSchema = "[{\"name\": \"hairLength\", \"type\": \"select\", \"label\": \"Saç Uzunluğu\", \"options\": [\"Kısa\", \"Orta\", \"Uzun\"], \"required\": false}, {\"name\": \"specialRequest\", \"type\": \"textarea\", \"label\": \"Özel İstekleriniz\", \"required\": false}]",
+            CreatedAt = DateTime.UtcNow,
+            IsActive = true
+        });
+        db.SaveChanges();
+    }
+
+    // Admin Login Hesapları
+    var adminAccounts = new[]
+    {
+        (tid, "admin@dentist.com", "admin123"),
+        (lawyerTid, "admin@lawyer.com", "admin123"),
+        (salonTid, "admin@salon.com", "admin123"),
+        (tid, "admin@demo.com", "admin123") // Geriye dönük uyumluluk için
+    };
+
+    foreach (var (tId, email, pwd) in adminAccounts)
+    {
+        if (!db.Admins.Any(a => a.Email == email))
+        {
+            db.Admins.Add(new Admin
+            {
+                Id = Guid.NewGuid(),
+                TenantId = tId,
+                Email = email,
+                PasswordHash = BCrypt.Net.BCrypt.HashPassword(pwd),
+                Role = "Owner",
+                CreatedAt = DateTime.UtcNow
+            });
+        }
+    }
+    db.SaveChanges();
 
     // Personeller için Kullanıcı (Auth) ID'leri
     var ayseUserId = Guid.Parse("d1e3a6a1-a6a1-4a6a-a6a1-a6a1a6a1a6a1");

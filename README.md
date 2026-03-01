@@ -41,10 +41,15 @@ En hızlı kurulum şekli Docker kullanmaktır. Hiçbir yerel bağımlılık (Po
     docker-compose up -d --build
     ```
 
-3.  **Erişim**:
-    - **Frontend**: `http://localhost:3000`
-    - **Backend API**: `http://localhost:5032/swagger`
-    - **Varsayılan Admin**: `admin@demo.com` / `admin123`
+3.  **Erişim ve Demo Hesapları**:
+    Sistemde hali hazırda 3 farklı sektör (Tenant) için örnek veriler mevcuttur. Her birinin kendine ait teması ve dinamik randevu formları (Booking Form Schema) vardır.
+
+    - **Diş Hekimi (Dentist)**: `http://localhost:3000/dentist` (Admin: `admin@dentist.com` / `admin123`)
+    - **Hukuk Bürosu (Lawyer)**: `http://localhost:3000/lawyer` (Admin: `admin@lawyer.com` / `admin123`)
+    - **Güzellik & Kuaför (Salon)**: `http://localhost:3000/salon` (Admin: `admin@salon.com` / `admin123`)
+
+    - **Geriye Dönük Varsayılan Admin**: `admin@demo.com` / `admin123`
+    - **Backend API (Swagger)**: `http://localhost:5032/swagger`
 
 ---
 
@@ -69,6 +74,20 @@ En hızlı kurulum şekli Docker kullanmaktır. Hiçbir yerel bağımlılık (Po
   npm run dev
   ```
 - Tarayıcıda `http://localhost:3000` adresine gidin.
+
+---
+
+## ⚠️ Bilinen Kısıtlamalar (Limitations)
+
+- **Ödeme Altyapısı**: Sistem şu an için Iyzico / Stripe gibi bir ödeme aracı barındırmamaktadır. Randevular ödemesiz onaylanmaktadır.
+- **Google Calendar Entegrasyonu**: Mevcut sürüm, personellerin kişisel Google Takvimleri ile çift yönlü senkronizasyon yapmamaktadır. (Roadmap üzerinde planlanmıştır.)
+- **Çoklu Dil (Multi-language)**: Panel ve Müşteri arayüzü tek dil (Türkçe/İngilizce) konfigürasyonuyla çalışmaktadır. Dinamik i18n altyapısı ileri fazlarda eklenecektir.
+
+## 🔮 Gelecek Planları (Roadmap)
+
+1. **Phase 7 (Payments)**: Online kapora/depozito ödeme sisteminin entegrasyonu.
+2. **Phase 8 (Integrations)**: Google Calendar, Zoom (Online görüşme) ve WhatsApp bildirim altyapısının kurulması.
+3. **Phase 9 (Mobile Apps)**: Capacitor altyapısıyla hazırlanan Android & iOS versiyonlarının Native mağazalarda yayınlanabilir hale getirilmesi.
 
 ---
 
