@@ -9,8 +9,18 @@ using RandevuTakip.Api.Services;
 
 using System.Text.Json.Serialization;
 using StackExchange.Redis;
+using Serilog;
 
-var builder = WebApplication.CreateBuilder(args);
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+
+try 
+{
+    Log.Information("Starting web host");
+    var builder = WebApplication.CreateBuilder(args);
+    builder.Host.UseSerilog();
 
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
@@ -77,6 +87,15 @@ SeedDatabase(app);
 // ----------------------------
 
 app.Run();
+}
+catch (Exception ex)
+{
+    Log.Fatal(ex, "Host terminated unexpectedly");
+}
+finally
+{
+    Log.CloseAndFlush();
+}
 
 static void SeedDatabase(WebApplication app)
 {
