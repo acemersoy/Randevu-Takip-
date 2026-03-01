@@ -1,0 +1,1125 @@
+{
+  "meta": {
+    "document_type": "Company Project Plan",
+    "project_name": "BookPilot",
+    "product_type": "Multi-tenant Appointment & Admin Management Platform",
+    "primary_goal": "Build a sellable, sector-adaptable fullstack product (dentist/lawyer/salon/etc.) with admin panel, strong booking engine, and production-ready deployment.",
+    "principles": [
+      {
+        "name": "MVP-first, then expand",
+        "why": "If booking is not working end-to-end early, the project becomes a never-ending UI collection with no real product value."
+      },
+      {
+        "name": "Multi-tenant by design",
+        "why": "Selling to multiple industries requires one codebase with per-tenant configuration, not copy-pasting projects."
+      },
+      {
+        "name": "Production-minded from day 1",
+        "why": "Admin + payments/notifications + audit + rate limiting become painful to retrofit later; we lay foundations early."
+      }
+    ],
+    "assumptions": {
+      "sprint_length": "1 week",
+      "team_model": {
+        "team_size": 1,
+        "note": "Plan is written in 'company style' but works for solo execution. Tasks are sized so a solo dev can still ship weekly increments."
+      },
+      "environments": ["local", "staging", "production"],
+      "definition_of_done_global": [
+        "Code merged to main with basic checks passing",
+        "API endpoints documented (request/response/error cases)",
+        "UI screens functional with validation + error handling",
+        "No critical security holes introduced (auth-protected routes, basic rate limits where needed)",
+        "Deployment instructions updated if relevant"
+      ]
+    }
+  },
+  "stack_by_layer": {
+    "frontend": {
+      "purpose": "Customer-facing booking UI + Admin panel UI",
+      "technologies": [
+        { "name": "Next.js (App Router)", "why": "Modern React framework with routing, SSR/SSG options, strong ecosystem." },
+        { "name": "TypeScript", "why": "Reduces runtime bugs, improves refactoring and code quality." },
+        { "name": "Tailwind CSS", "why": "Fast iteration on modern responsive design without CSS sprawl." },
+        { "name": "shadcn/ui", "why": "Modern component base with good UX defaults; speeds up building admin dashboards." },
+        { "name": "TanStack Query", "why": "Standard solution for server-state caching, retries, loading states." },
+        { "name": "React Hook Form + Zod", "why": "Reliable forms + schema validation; prevents garbage data and improves UX." },
+        { "name": "date-fns", "why": "Lightweight date utilities for booking/availability UIs." }
+      ]
+    },
+    "backend": {
+      "purpose": "Business logic, REST API, auth, booking engine",
+      "technologies": [
+        { "name": "ASP.NET Core Web API (.NET 8+)", "why": "High performance, mature ecosystem, strong enterprise patterns." },
+        { "name": "Entity Framework Core", "why": "Fast development for CRUD and schema evolution via migrations." },
+        {
+          "name": "Dapper (optional)",
+          "why": "For performance-critical queries (availability/search/reporting) when EF becomes too heavy."
+        },
+        { "name": "JWT Authentication", "why": "Standard stateless auth for admin panel and APIs." },
+        { "name": "Serilog", "why": "Structured logs for debugging, monitoring, audit trails." },
+        { "name": "FluentValidation (optional)", "why": "Clear server-side validation, avoids controller clutter." }
+      ]
+    },
+    "data": {
+      "purpose": "Durable storage + caching + concurrency control",
+      "technologies": [
+        { "name": "PostgreSQL", "why": "Reliable relational DB, strong JSONB for tenant configuration, great performance." },
+        { "name": "Redis", "why": "Availability caching, rate limiting, and slot-locking to prevent double booking." }
+      ]
+    },
+    "devops_observability": {
+      "purpose": "Repeatable deployments + stability",
+      "technologies": [
+        { "name": "Docker + Docker Compose", "why": "Reproducible local/prod environments; reduces 'works on my machine' issues." },
+        { "name": "NGINX (optional)", "why": "Reverse proxy, SSL termination, static optimization." },
+        { "name": "OpenTelemetry (optional)", "why": "Tracing/metrics for diagnosing production issues." },
+        { "name": "Linux VPS", "why": "Cost-effective production hosting; simple and flexible." }
+      ]
+    }
+  },
+  "scope": {
+    "must_have": [
+      {
+        "name": "Multi-tenant core",
+        "why": "Single codebase must serve multiple businesses and industries."
+      },
+      {
+        "name": "Booking engine with conflict prevention",
+        "why": "The product exists to book time slots safely. Double-booking destroys trust."
+      },
+      {
+        "name": "Admin panel with RBAC",
+        "why": "Sellable product requires business self-management. Roles protect internal ops."
+      },
+      {
+        "name": "Tenant settings (theme + dynamic booking form schema)",
+        "why": "Industry adaptation without code changes increases sales velocity."
+      },
+      {
+        "name": "Production deployment + demo tenants",
+        "why": "To sell, you need a working demo link and reproducible setup."
+      }
+    ],
+    "nice_to_have_later": [
+      { "name": "Payments/Deposits", "why": "Boosts business value; not required for first sellable version." },
+      { "name": "Google Calendar sync", "why": "Helpful integration but adds complexity and external dependency." },
+      { "name": "Drag-and-drop calendar UI", "why": "Nice UX, but core functionality works without it." }
+    ]
+  },
+  "quality_attributes": {
+    "performance": {
+      "targets": [
+        "Availability endpoint should handle bursts without DB overload via caching",
+        "Admin list pages should paginate/filter server-side"
+      ],
+      "why": "Booking systems get spiky traffic; slow systems lose customers."
+    },
+    "security": {
+      "targets": [
+        "JWT-protected admin endpoints",
+        "Rate limiting on booking endpoint",
+        "Input validation (client + server)",
+        "Audit log for sensitive changes"
+      ],
+      "why": "Admin panel abuse and spam booking attempts are common; protection prevents outages and fraud."
+    },
+    "maintainability": {
+      "targets": [
+        "Clear module boundaries (tenant, booking, admin, settings)",
+        "DTOs for external contracts",
+        "Consistent error handling"
+      ],
+      "why": "As features grow (staff, notifications, reports), tangled code becomes unshippable."
+    }
+  },
+  "epics": [
+    {
+      "id": "EPIC-01",
+      "name": "Platform Foundation",
+      "why": "Without stable foundations (env, logging, migrations), every future feature becomes slower and riskier."
+    },
+    {
+      "id": "EPIC-02",
+      "name": "Multi-tenant Core",
+      "why": "Enables serving multiple businesses/industries in one system."
+    },
+    {
+      "id": "EPIC-03",
+      "name": "Booking Engine",
+      "why": "Core product value: safe availability + appointment creation."
+    },
+    {
+      "id": "EPIC-04",
+      "name": "Admin Panel & RBAC",
+      "why": "Businesses pay for self-management and control."
+    },
+    {
+      "id": "EPIC-05",
+      "name": "Tenant Settings & Industry Adaptation",
+      "why": "Allows one build to serve dentist/lawyer/salon with different forms and branding."
+    },
+    {
+      "id": "EPIC-06",
+      "name": "Notifications & Automation",
+      "why": "Reduces no-shows and improves professionalism."
+    },
+    {
+      "id": "EPIC-07",
+      "name": "Performance, Concurrency & Security Hardening",
+      "why": "Stops spam, prevents double-booking races, keeps system stable under load."
+    },
+    {
+      "id": "EPIC-08",
+      "name": "Deploy, CI/CD, Observability",
+      "why": "A product that cannot be deployed reliably is not a product."
+    },
+    {
+      "id": "EPIC-09",
+      "name": "Productization (Demos, Docs, Sales Kit)",
+      "why": "Turning software into a sellable asset requires demos, documentation, and packaging."
+    }
+  ],
+  "sprints": [
+    {
+      "sprint_id": "SPRINT-00",
+      "name": "Setup & Standards",
+      "goal": "Create runnable dev environment and project skeletons for frontend and backend.",
+      "why_now": "Prevents chaos; ensures all later work builds on a stable base.",
+      "deliverables": [
+        "Docker Compose: API + PostgreSQL + Redis",
+        "Next.js UI skeleton with Tailwind + shadcn",
+        ".NET API skeleton with EF migrations",
+        "README with one-command startup"
+      ],
+      "stories": [
+        {
+          "story_id": "S0-01",
+          "epic_id": "EPIC-01",
+          "title": "Backend bootstrap (.NET + EF + base error handling)",
+          "why": "We need a reliable API base before building domain features.",
+          "tasks": [
+            {
+              "task_id": "S0-01-T1",
+              "name": "Create .NET 8 Web API project",
+              "why": "Foundation for all backend modules.",
+              "estimate": "S",
+              "acceptance_criteria": ["API runs locally without errors"]
+            },
+            {
+              "task_id": "S0-01-T2",
+              "name": "Configure PostgreSQL connection + EF Core",
+              "why": "Persistent data is required for tenants/services/appointments.",
+              "estimate": "S",
+              "acceptance_criteria": ["API connects to DB", "DB connection errors are logged clearly"]
+            },
+            {
+              "task_id": "S0-01-T3",
+              "name": "Add migrations pipeline (EF Core Migrations)",
+              "why": "Database schema must evolve safely over time.",
+              "estimate": "S",
+              "acceptance_criteria": ["Migration can be created and applied", "DB schema updates reproducibly"]
+            },
+            {
+              "task_id": "S0-01-T4",
+              "name": "Global error handling middleware",
+              "why": "Consistent API errors improve frontend stability and debugging.",
+              "estimate": "S",
+              "acceptance_criteria": ["Unhandled errors return consistent JSON error format", "No stack traces leaked in production mode"]
+            }
+          ],
+          "definition_of_done": [
+            "API starts with DB connected",
+            "Migrations can be applied",
+            "Global error format is consistent"
+          ]
+        },
+        {
+          "story_id": "S0-02",
+          "epic_id": "EPIC-01",
+          "title": "Frontend bootstrap (Next.js + Tailwind + shadcn)",
+          "why": "We need a modern UI base to iterate quickly on public + admin screens.",
+          "tasks": [
+            {
+              "task_id": "S0-02-T1",
+              "name": "Create Next.js App Router project with TypeScript",
+              "why": "Modern routing and typed codebase reduces future churn.",
+              "estimate": "S",
+              "acceptance_criteria": ["Frontend runs locally"]
+            },
+            {
+              "task_id": "S0-02-T2",
+              "name": "Install Tailwind and shadcn/ui",
+              "why": "Fast modern UI construction for both public site and admin dashboard.",
+              "estimate": "S",
+              "acceptance_criteria": ["Tailwind styles render", "At least one shadcn component renders"]
+            },
+            {
+              "task_id": "S0-02-T3",
+              "name": "Base layout + navigation skeleton",
+              "why": "All future pages will share layout; avoids duplication.",
+              "estimate": "S",
+              "acceptance_criteria": ["Layout works across routes", "Responsive container applied"]
+            }
+          ],
+          "definition_of_done": [
+            "Frontend runs",
+            "UI kit ready",
+            "Layout in place"
+          ]
+        },
+        {
+          "story_id": "S0-03",
+          "epic_id": "EPIC-01",
+          "title": "Local orchestration via Docker Compose",
+          "why": "Repeatable environment speeds development and avoids local config drift.",
+          "tasks": [
+            {
+              "task_id": "S0-03-T1",
+              "name": "Create docker-compose for api + postgres + redis",
+              "why": "Single command brings up full environment.",
+              "estimate": "M",
+              "acceptance_criteria": ["All services start with one command", "Ports and env vars documented"]
+            },
+            {
+              "task_id": "S0-03-T2",
+              "name": "Update README with setup/run instructions",
+              "why": "Company-grade onboarding and future maintainability.",
+              "estimate": "XS",
+              "acceptance_criteria": ["README includes exact commands", "Troubleshooting notes added"]
+            }
+          ],
+          "definition_of_done": [
+            "docker compose up works",
+            "README is accurate"
+          ]
+        }
+      ]
+    },
+    {
+      "sprint_id": "SPRINT-01",
+      "name": "Multi-tenant Core",
+      "goal": "Implement tenant + service domain and public endpoints; render tenant/service pages in UI.",
+      "why_now": "We need the product to serve multiple businesses from day 1.",
+      "deliverables": [
+        "Tenants + Services tables and seed data",
+        "Public endpoints for tenant and services",
+        "Public UI pages: /{slug} and /{slug}/services"
+      ],
+      "stories": [
+        {
+          "story_id": "S1-01",
+          "epic_id": "EPIC-02",
+          "title": "Tenant & Service domain model",
+          "why": "Tenant is the core boundary for data isolation and customization.",
+          "tasks": [
+            {
+              "task_id": "S1-01-T1",
+              "name": "Create Tenant entity (slug, industry, theme_json, booking_form_schema)",
+              "why": "Slug drives routing; theme/schema enable industry adaptation.",
+              "estimate": "S",
+              "acceptance_criteria": ["Tenant table created", "Slug unique constraint exists"]
+            },
+            {
+              "task_id": "S1-01-T2",
+              "name": "Create Service entity (tenant_id, name, duration, price, active)",
+              "why": "Services define what can be booked.",
+              "estimate": "S",
+              "acceptance_criteria": ["Service table created", "Tenant FK enforced"]
+            },
+            {
+              "task_id": "S1-01-T3",
+              "name": "Seed demo tenant (Dentist) + services",
+              "why": "Immediate working demo for development and sales.",
+              "estimate": "S",
+              "acceptance_criteria": ["Seed creates tenant + at least 3 services"]
+            }
+          ],
+          "definition_of_done": [
+            "Migration applied",
+            "Seed data appears in DB"
+          ]
+        },
+        {
+          "story_id": "S1-02",
+          "epic_id": "EPIC-02",
+          "title": "Public API endpoints for tenant & services",
+          "why": "Frontend requires stable contracts to render tenant pages.",
+          "tasks": [
+            {
+              "task_id": "S1-02-T1",
+              "name": "GET /api/{slug}/tenant",
+              "why": "Load tenant identity + theme config.",
+              "estimate": "S",
+              "acceptance_criteria": ["Valid slug returns tenant", "Invalid slug returns 404"]
+            },
+            {
+              "task_id": "S1-02-T2",
+              "name": "GET /api/{slug}/services",
+              "why": "List services for booking and marketing pages.",
+              "estimate": "S",
+              "acceptance_criteria": ["Only services for tenant are returned", "Inactive services excluded by default"]
+            },
+            {
+              "task_id": "S1-02-T3",
+              "name": "Standardize error responses",
+              "why": "Frontend needs predictable error formats.",
+              "estimate": "XS",
+              "acceptance_criteria": ["Errors include code + message fields"]
+            }
+          ],
+          "definition_of_done": [
+            "Endpoints documented with request/response",
+            "Basic tests or manual verification completed"
+          ]
+        },
+        {
+          "story_id": "S1-03",
+          "epic_id": "EPIC-02",
+          "title": "Public UI pages for tenant & services",
+          "why": "Visible product progress; builds demo credibility early.",
+          "tasks": [
+            {
+              "task_id": "S1-03-T1",
+              "name": "Implement /{slug} page (tenant landing)",
+              "why": "Tenant landing drives conversions and navigation.",
+              "estimate": "S",
+              "acceptance_criteria": ["Tenant name/CTA renders", "404 page for invalid slug"]
+            },
+            {
+              "task_id": "S1-03-T2",
+              "name": "Implement /{slug}/services page (service cards)",
+              "why": "Services page is required for booking and industry adaptation.",
+              "estimate": "S",
+              "acceptance_criteria": ["Services list renders", "Mobile responsive"]
+            },
+            {
+              "task_id": "S1-03-T3",
+              "name": "Add TanStack Query data fetching + loading states",
+              "why": "Standard approach for stable UX and caching.",
+              "estimate": "S",
+              "acceptance_criteria": ["Loading skeleton shown", "Network errors shown gracefully"]
+            }
+          ],
+          "definition_of_done": [
+            "Tenant and services pages functional",
+            "Responsive layout verified"
+          ]
+        }
+      ]
+    },
+    {
+      "sprint_id": "SPRINT-02",
+      "name": "Booking Engine MVP",
+      "goal": "Enable availability generation and appointment creation with conflict prevention.",
+      "why_now": "This is the core value. Without booking working end-to-end, there is no product.",
+      "deliverables": [
+        "Working hours + appointments schema",
+        "Availability endpoint",
+        "Booking UI flow + form validation",
+        "Conflict prevention (single-user and basic race conditions)"
+      ],
+      "stories": [
+        {
+          "story_id": "S2-01",
+          "epic_id": "EPIC-03",
+          "title": "Working hours & appointments schema",
+          "why": "We need structured time rules and stored bookings to calculate availability reliably.",
+          "tasks": [
+            {
+              "task_id": "S2-01-T1",
+              "name": "Create WorkingHours entity (tenant_id, day_of_week, start_time, end_time, slot_step_min)",
+              "why": "Defines slot grid for availability.",
+              "estimate": "S",
+              "acceptance_criteria": ["WorkingHours table exists", "Validation prevents invalid time ranges"]
+            },
+            {
+              "task_id": "S2-01-T2",
+              "name": "Create Appointment entity (tenant_id, service_id, start_at, end_at, customer fields, status, extra_json)",
+              "why": "Stores bookings and enables industry-specific custom fields via extra_json.",
+              "estimate": "S",
+              "acceptance_criteria": ["Appointment table exists", "Indexes support tenant/date queries"]
+            },
+            {
+              "task_id": "S2-01-T3",
+              "name": "Seed default working hours for demo tenant",
+              "why": "So availability works immediately in demo.",
+              "estimate": "XS",
+              "acceptance_criteria": ["Demo tenant has working hours Mon-Fri"]
+            }
+          ],
+          "definition_of_done": [
+            "Migration applied",
+            "Seed includes working hours"
+          ]
+        },
+        {
+          "story_id": "S2-02",
+          "epic_id": "EPIC-03",
+          "title": "Availability algorithm + endpoint",
+          "why": "Customers must see bookable slots; wrong availability causes real-world operational failures.",
+          "tasks": [
+            {
+              "task_id": "S2-02-T1",
+              "name": "Implement Slot Generator service",
+              "why": "Centralizes availability logic and keeps controllers clean.",
+              "estimate": "M",
+              "acceptance_criteria": ["Given working hours and slot_step, returns correct slot list"]
+            },
+            {
+              "task_id": "S2-02-T2",
+              "name": "Implement conflict detection against appointments",
+              "why": "Prevents showing slots that are already taken.",
+              "estimate": "M",
+              "acceptance_criteria": ["Overlapping appointments remove the slot", "Edge overlaps handled (exact boundary)"]
+            },
+            {
+              "task_id": "S2-02-T3",
+              "name": "GET /api/{slug}/availability?date&serviceId",
+              "why": "Frontend needs a deterministic source of available slots.",
+              "estimate": "S",
+              "acceptance_criteria": ["Returns list of slots", "Returns empty list when closed"]
+            }
+          ],
+          "definition_of_done": [
+            "Availability matches working hours minus existing bookings",
+            "Endpoint documented"
+          ]
+        },
+        {
+          "story_id": "S2-03",
+          "epic_id": "EPIC-03",
+          "title": "Appointment creation endpoint with validation",
+          "why": "Booking is meaningless unless it is persisted safely with validation.",
+          "tasks": [
+            {
+              "task_id": "S2-03-T1",
+              "name": "POST /api/{slug}/appointments",
+              "why": "Creates an appointment for a selected slot and service.",
+              "estimate": "M",
+              "acceptance_criteria": ["Rejects invalid service/slot", "Creates appointment when valid"]
+            },
+            {
+              "task_id": "S2-03-T2",
+              "name": "Server-side validation rules",
+              "why": "Prevents garbage data and ensures operational correctness.",
+              "estimate": "S",
+              "acceptance_criteria": ["Phone/name required", "Slot within working hours", "No overlaps allowed"]
+            }
+          ],
+          "definition_of_done": [
+            "Double-booking prevented in normal sequential requests",
+            "Meaningful error responses returned"
+          ]
+        },
+        {
+          "story_id": "S2-04",
+          "epic_id": "EPIC-03",
+          "title": "Booking UI flow + form validation",
+          "why": "Customers need a clean UX to complete bookings quickly.",
+          "tasks": [
+            {
+              "task_id": "S2-04-T1",
+              "name": "Create /{slug}/book page (service -> date -> time -> form)",
+              "why": "Core conversion flow.",
+              "estimate": "M",
+              "acceptance_criteria": ["User can complete the flow end-to-end"]
+            },
+            {
+              "task_id": "S2-04-T2",
+              "name": "Form validation with React Hook Form + Zod",
+              "why": "Prevents invalid submissions and reduces backend load.",
+              "estimate": "S",
+              "acceptance_criteria": ["Client blocks empty/invalid inputs", "Errors displayed clearly"]
+            },
+            {
+              "task_id": "S2-04-T3",
+              "name": "Success page + toasts",
+              "why": "Confirms booking and reduces user anxiety.",
+              "estimate": "XS",
+              "acceptance_criteria": ["Success screen shows summary", "Errors show toast"]
+            }
+          ],
+          "definition_of_done": [
+            "User can book a slot from UI",
+            "Booking appears in DB"
+          ]
+        }
+      ]
+    },
+    {
+      "sprint_id": "SPRINT-03",
+      "name": "Admin Auth + Appointments Management",
+      "goal": "Create admin login, protect endpoints, and provide appointment management UI.",
+      "why_now": "Admin panel is required for a sellable product; businesses must control their schedule.",
+      "deliverables": [
+        "JWT login",
+        "Protected admin endpoints",
+        "Admin appointments list and status management"
+      ],
+      "stories": [
+        {
+          "story_id": "S3-01",
+          "epic_id": "EPIC-04",
+          "title": "Admin authentication (JWT) + seed admin",
+          "why": "Admin panel access must be secured; seed enables demo/testing.",
+          "tasks": [
+            {
+              "task_id": "S3-01-T1",
+              "name": "Admin entity + password hashing",
+              "why": "Secure credentials storage is mandatory.",
+              "estimate": "S",
+              "acceptance_criteria": ["Passwords stored hashed", "No plain text passwords in DB"]
+            },
+            {
+              "task_id": "S3-01-T2",
+              "name": "POST /api/auth/login (JWT issuance)",
+              "why": "Token required for admin session.",
+              "estimate": "S",
+              "acceptance_criteria": ["Valid credentials return JWT", "Invalid returns 401"]
+            },
+            {
+              "task_id": "S3-01-T3",
+              "name": "Add authorization middleware to admin routes",
+              "why": "Prevent unauthorized access to schedule and settings.",
+              "estimate": "S",
+              "acceptance_criteria": ["Admin endpoints require JWT", "Unauthorized requests blocked"]
+            },
+            {
+              "task_id": "S3-01-T4",
+              "name": "Seed demo admin user per tenant",
+              "why": "Sales demo and quick testing.",
+              "estimate": "XS",
+              "acceptance_criteria": ["Demo login works out-of-the-box"]
+            }
+          ],
+          "definition_of_done": [
+            "JWT auth working",
+            "Admin routes protected",
+            "Demo admin exists"
+          ]
+        },
+        {
+          "story_id": "S3-02",
+          "epic_id": "EPIC-04",
+          "title": "Admin appointment list + status updates",
+          "why": "Admins must confirm/cancel bookings to manage operations.",
+          "tasks": [
+            {
+              "task_id": "S3-02-T1",
+              "name": "GET /api/admin/appointments (filters: date range, status, service)",
+              "why": "Admin needs operational view and filtering.",
+              "estimate": "M",
+              "acceptance_criteria": ["Returns paginated results", "Filters apply correctly"]
+            },
+            {
+              "task_id": "S3-02-T2",
+              "name": "PUT /api/admin/appointments/{id}/status",
+              "why": "Core workflow to confirm/cancel.",
+              "estimate": "S",
+              "acceptance_criteria": ["Status updates persisted", "Invalid transitions blocked if defined"]
+            },
+            {
+              "task_id": "S3-02-T3",
+              "name": "Admin UI: /{slug}/admin/login",
+              "why": "Admin needs access from tenant scope.",
+              "estimate": "S",
+              "acceptance_criteria": ["Login stores token", "Redirect to dashboard on success"]
+            },
+            {
+              "task_id": "S3-02-T4",
+              "name": "Admin UI: /{slug}/admin/appointments",
+              "why": "Operational control surface for staff.",
+              "estimate": "M",
+              "acceptance_criteria": ["List shows bookings", "Status can be updated from UI"]
+            }
+          ],
+          "definition_of_done": [
+            "Admin can log in and manage appointments",
+            "Protected routes enforced"
+          ]
+        }
+      ]
+    },
+    {
+      "sprint_id": "SPRINT-04",
+      "name": "Admin: Services + Working Hours + Basic Dashboard",
+      "goal": "Let businesses self-manage services and schedule rules from admin panel.",
+      "why_now": "To sell, the business must be able to edit their services and working hours without developer help.",
+      "deliverables": [
+        "Services CRUD (admin)",
+        "Working hours editor",
+        "Basic dashboard summary"
+      ],
+      "stories": [
+        {
+          "story_id": "S4-01",
+          "epic_id": "EPIC-04",
+          "title": "Admin Services CRUD",
+          "why": "Services define what can be booked; admin must manage them.",
+          "tasks": [
+            {
+              "task_id": "S4-01-T1",
+              "name": "Admin endpoints for services (list/create/update/toggle active)",
+              "why": "Full lifecycle management for booking offerings.",
+              "estimate": "M",
+              "acceptance_criteria": ["CRUD works", "Tenant isolation enforced"]
+            },
+            {
+              "task_id": "S4-01-T2",
+              "name": "Admin UI /admin/services",
+              "why": "Business owner needs UI control.",
+              "estimate": "M",
+              "acceptance_criteria": ["Can add/edit/disable services", "Validations enforced"]
+            }
+          ],
+          "definition_of_done": [
+            "Admin can manage services",
+            "Public services page reflects changes"
+          ]
+        },
+        {
+          "story_id": "S4-02",
+          "epic_id": "EPIC-04",
+          "title": "Admin Working Hours management",
+          "why": "Availability and booking depend on correct time rules.",
+          "tasks": [
+            {
+              "task_id": "S4-02-T1",
+              "name": "Admin endpoints for working hours (get/set per day)",
+              "why": "Schedule rules must be editable.",
+              "estimate": "M",
+              "acceptance_criteria": ["Rules saved and validated", "Closed days supported"]
+            },
+            {
+              "task_id": "S4-02-T2",
+              "name": "Admin UI /admin/working-hours",
+              "why": "Non-technical admin needs schedule UI.",
+              "estimate": "M",
+              "acceptance_criteria": ["Set hours per day", "slot_step editable"]
+            }
+          ],
+          "definition_of_done": [
+            "Working hours changes affect availability results"
+          ]
+        },
+        {
+          "story_id": "S4-03",
+          "epic_id": "EPIC-04",
+          "title": "Basic dashboard stats",
+          "why": "Admins expect a quick overview: today's bookings, pending, cancelled.",
+          "tasks": [
+            {
+              "task_id": "S4-03-T1",
+              "name": "Dashboard endpoint (counts by status/date)",
+              "why": "Support admin decision-making quickly.",
+              "estimate": "S",
+              "acceptance_criteria": ["Returns counts accurately"]
+            },
+            {
+              "task_id": "S4-03-T2",
+              "name": "Admin UI /admin/dashboard",
+              "why": "Landing after login; improves perceived product quality.",
+              "estimate": "S",
+              "acceptance_criteria": ["Displays stats with loading states"]
+            }
+          ],
+          "definition_of_done": [
+            "Admin sees dashboard summary"
+          ]
+        }
+      ]
+    },
+    {
+      "sprint_id": "SPRINT-05",
+      "name": "Tenant Settings & Industry Adaptation",
+      "goal": "Enable theme customization and dynamic booking forms per industry without code changes.",
+      "why_now": "This converts one product into multiple industry offerings and increases sales.",
+      "deliverables": [
+        "Tenant settings endpoints",
+        "Theme applied on public pages",
+        "Dynamic booking form schema rendered and stored"
+      ],
+      "stories": [
+        {
+          "story_id": "S5-01",
+          "epic_id": "EPIC-05",
+          "title": "Tenant settings endpoints (theme + form schema)",
+          "why": "Customization must be editable via admin panel.",
+          "tasks": [
+            {
+              "task_id": "S5-01-T1",
+              "name": "GET/PUT /api/admin/settings (theme_json, booking_form_schema)",
+              "why": "Admin must manage brand and extra fields.",
+              "estimate": "M",
+              "acceptance_criteria": ["Settings saved", "Tenant isolation enforced", "Schema validated minimally"]
+            },
+            {
+              "task_id": "S5-01-T2",
+              "name": "Apply theme_json on public UI",
+              "why": "Branding is visible value for businesses.",
+              "estimate": "S",
+              "acceptance_criteria": ["Colors/logo change per tenant", "Fallback defaults exist"]
+            }
+          ],
+          "definition_of_done": [
+            "Admin can edit settings",
+            "Public UI reflects theme"
+          ]
+        },
+        {
+          "story_id": "S5-02",
+          "epic_id": "EPIC-05",
+          "title": "Dynamic booking form (schema-driven) + persistence",
+          "why": "Industry-specific fields must be collected without custom dev work.",
+          "tasks": [
+            {
+              "task_id": "S5-02-T1",
+              "name": "Render booking form fields from booking_form_schema (frontend)",
+              "why": "Enables dentist 'complaint note' vs lawyer 'case topic'.",
+              "estimate": "M",
+              "acceptance_criteria": ["Schema fields render", "Supported types documented (text, textarea, select, checkbox)"]
+            },
+            {
+              "task_id": "S5-02-T2",
+              "name": "Store dynamic fields into appointments.extra_json",
+              "why": "Keeps core appointment schema stable while capturing custom data.",
+              "estimate": "S",
+              "acceptance_criteria": ["extra_json saved", "Admin can view extra fields in appointment detail"]
+            }
+          ],
+          "definition_of_done": [
+            "Dynamic fields work end-to-end",
+            "Data visible in admin"
+          ]
+        }
+      ]
+    },
+    {
+      "sprint_id": "SPRINT-06",
+      "name": "Staff & Scheduling Expansion",
+      "goal": "Support multiple staff members and staff-specific availability.",
+      "why_now": "Real businesses often have multiple providers (doctors/lawyers/therapists). This increases product market fit.",
+      "deliverables": [
+        "Staff model + RBAC",
+        "Service-staff mapping",
+        "Availability by staff",
+        "Admin scheduling views"
+      ],
+      "stories": [
+        {
+          "story_id": "S6-01",
+          "epic_id": "EPIC-04",
+          "title": "Staff model + role permissions",
+          "why": "Different staff require different access levels and schedules.",
+          "tasks": [
+            {
+              "task_id": "S6-01-T1",
+              "name": "Add staff entity + link to tenant + roles",
+              "why": "Enables multiple providers under one tenant.",
+              "estimate": "M",
+              "acceptance_criteria": ["Staff can be created/disabled", "Role enforced"]
+            },
+            {
+              "task_id": "S6-01-T2",
+              "name": "Service-staff mapping",
+              "why": "Not all staff provide all services.",
+              "estimate": "M",
+              "acceptance_criteria": ["Admin assigns staff to services", "Availability respects mapping"]
+            }
+          ],
+          "definition_of_done": [
+            "Staff exists and is manageable",
+            "Mapping impacts availability"
+          ]
+        }
+      ]
+    },
+    {
+      "sprint_id": "SPRINT-07",
+      "name": "Notifications & Automation",
+      "goal": "Add confirmation, cancellation, and reminder notifications.",
+      "why_now": "Professionalism and reduced no-shows increase value and retention.",
+      "deliverables": [
+        "Notification service abstraction",
+        "Email notifications (initial)",
+        "Reminder jobs"
+      ],
+      "stories": [
+        {
+          "story_id": "S7-01",
+          "epic_id": "EPIC-06",
+          "title": "Notification service + event triggers",
+          "why": "Decouple notification channels from business logic.",
+          "tasks": [
+            {
+              "task_id": "S7-01-T1",
+              "name": "Create notification interface + email implementation",
+              "why": "Start with email; extend to SMS/WhatsApp later.",
+              "estimate": "M",
+              "acceptance_criteria": ["Email sent on booking create", "Email sent on status change"]
+            },
+            {
+              "task_id": "S7-01-T2",
+              "name": "Background job for reminders (24h before)",
+              "why": "Reduces no-show rate.",
+              "estimate": "M",
+              "acceptance_criteria": ["Job runs", "Reminders sent for upcoming appointments"]
+            }
+          ],
+          "definition_of_done": [
+            "Emails sent reliably in staging",
+            "Reminder job documented and configurable"
+          ]
+        }
+      ]
+    },
+    {
+      "sprint_id": "SPRINT-08",
+      "name": "Redis, Concurrency & Security Hardening",
+      "goal": "Improve performance, prevent race-condition double bookings, add rate limiting and audit logging.",
+      "why_now": "As usage grows, concurrency and abuse become real problems. Fixing later is expensive.",
+      "deliverables": [
+        "Availability cache",
+        "Slot locking",
+        "Rate limit on booking",
+        "Audit logs for admin actions"
+      ],
+      "stories": [
+        {
+          "story_id": "S8-01",
+          "epic_id": "EPIC-07",
+          "title": "Availability caching (Redis cache-aside)",
+          "why": "Availability queries can be frequent; caching avoids DB overload.",
+          "tasks": [
+            {
+              "task_id": "S8-01-T1",
+              "name": "Cache availability results per tenant/date/service (TTL 60s)",
+              "why": "Short TTL balances freshness and load reduction.",
+              "estimate": "M",
+              "acceptance_criteria": ["Cache hit rate observable in logs", "Cache invalidation strategy defined (TTL + optional manual bust)"]
+            }
+          ],
+          "definition_of_done": [
+            "Availability endpoint uses Redis",
+            "No functional regression"
+          ]
+        },
+        {
+          "story_id": "S8-02",
+          "epic_id": "EPIC-07",
+          "title": "Slot lock to prevent race-condition double-booking",
+          "why": "Two parallel requests can bypass checks without locks/transactions.",
+          "tasks": [
+            {
+              "task_id": "S8-02-T1",
+              "name": "Implement Redis lock key per tenant+slot (TTL 90s)",
+              "why": "Prevents concurrent creation for same slot; TTL prevents deadlocks.",
+              "estimate": "M",
+              "acceptance_criteria": ["Parallel requests: only one succeeds", "Failed lock returns conflict error"]
+            }
+          ],
+          "definition_of_done": [
+            "Race-condition protection verified with a simple concurrency test"
+          ]
+        },
+        {
+          "story_id": "S8-03",
+          "epic_id": "EPIC-07",
+          "title": "Rate limiting + audit logs",
+          "why": "Protects from spam/abuse and provides traceability for admin changes.",
+          "tasks": [
+            {
+              "task_id": "S8-03-T1",
+              "name": "Rate limit booking endpoint (by IP/phone)",
+              "why": "Common attack pattern is spamming bookings.",
+              "estimate": "M",
+              "acceptance_criteria": ["Excess requests blocked", "Reason returned to client"]
+            },
+            {
+              "task_id": "S8-03-T2",
+              "name": "Audit log for admin actions (service changes, working hours, settings, status updates)",
+              "why": "Businesses need accountability; helps debugging and security.",
+              "estimate": "M",
+              "acceptance_criteria": ["Audit entries created", "Admin can view audit list"]
+            }
+          ],
+          "definition_of_done": [
+            "Abuse protection in place",
+            "Audit trail exists for sensitive actions"
+          ]
+        }
+      ]
+    },
+    {
+      "sprint_id": "SPRINT-09",
+      "name": "Deploy, CI/CD, Observability",
+      "goal": "Ship to production with reliable deployment and basic monitoring/logging.",
+      "why_now": "A sellable product requires a stable demo environment and repeatable deployments.",
+      "deliverables": [
+        "Production docker compose",
+        "Nginx reverse proxy + SSL (optional but recommended)",
+        "Build pipeline",
+        "Structured logs and request correlation"
+      ],
+      "stories": [
+        {
+          "story_id": "S9-01",
+          "epic_id": "EPIC-08",
+          "title": "Production deployment packaging",
+          "why": "Product must run outside developer machine.",
+          "tasks": [
+            {
+              "task_id": "S9-01-T1",
+              "name": "Create prod docker-compose (api, db, redis, optional nginx)",
+              "why": "Repeatable deployment to VPS.",
+              "estimate": "M",
+              "acceptance_criteria": ["Runs on VPS", "Env secrets configurable"]
+            },
+            {
+              "task_id": "S9-01-T2",
+              "name": "Add basic CI pipeline (build + tests)",
+              "why": "Prevents broken deployments and ensures minimum quality.",
+              "estimate": "M",
+              "acceptance_criteria": ["Pipeline passes on PR", "Build artifacts produced"]
+            },
+            {
+              "task_id": "S9-01-T3",
+              "name": "Logging correlation id + request logging",
+              "why": "Essential for debugging production issues quickly.",
+              "estimate": "S",
+              "acceptance_criteria": ["Requests have correlation id", "Errors logged with context"]
+            }
+          ],
+          "definition_of_done": [
+            "Production deployment works",
+            "CI pipeline runs",
+            "Logs useful for debugging"
+          ]
+        }
+      ]
+    },
+    {
+      "sprint_id": "SPRINT-10",
+      "name": "Productization & Sales Kit",
+      "goal": "Prepare demos for multiple industries, documentation, and sales materials.",
+      "why_now": "Software is not a product until it can be demoed, explained, and packaged.",
+      "deliverables": [
+        "3 demo tenants (dentist/lawyer/salon) in seed",
+        "Demo admin accounts",
+        "Docs: setup + features + roadmap",
+        "Portfolio screenshots + short demo script"
+      ],
+      "stories": [
+        {
+          "story_id": "S10-01",
+          "epic_id": "EPIC-09",
+          "title": "Multi-industry demo tenants + documentation",
+          "why": "Selling requires showing different use-cases quickly without new coding.",
+          "tasks": [
+            {
+              "task_id": "S10-01-T1",
+              "name": "Seed 3 demo tenants with themes + schemas",
+              "why": "Proves multi-tenant + industry adaptation.",
+              "estimate": "S",
+              "acceptance_criteria": ["Each tenant has unique theme and booking fields"]
+            },
+            {
+              "task_id": "S10-01-T2",
+              "name": "Create demo admin accounts and include in docs",
+              "why": "Instant hands-on demo ability.",
+              "estimate": "XS",
+              "acceptance_criteria": ["Docs show login credentials for demo environment"]
+            },
+            {
+              "task_id": "S10-01-T3",
+              "name": "Write product docs (features, setup, environment, limitations)",
+              "why": "Company-grade documentation builds trust and maintainability.",
+              "estimate": "M",
+              "acceptance_criteria": ["Docs include install steps, config keys, known limitations, future roadmap"]
+            },
+            {
+              "task_id": "S10-01-T4",
+              "name": "Portfolio kit (screenshots + demo flow script)",
+              "why": "Increases conversion on freelance marketplaces.",
+              "estimate": "S",
+              "acceptance_criteria": ["At least 6 screenshots", "1-page demo script"]
+            }
+          ],
+          "definition_of_done": [
+            "3 industry demos live",
+            "Documentation complete",
+            "Sales kit ready"
+          ]
+        }
+      ]
+    }
+  ],
+  "risk_management": [
+    {
+      "risk": "Scope explosion (\"everything\" forever)",
+      "impact": "High",
+      "mitigation": [
+        "Lock MVP acceptance criteria by Sprint-02",
+        "Anything not needed to book and manage appointments goes to later sprints",
+        "Always maintain a working demo after each sprint"
+      ]
+    },
+    {
+      "risk": "Double booking due to concurrency",
+      "impact": "High",
+      "mitigation": [
+        "Implement Redis slot lock (Sprint-08)",
+        "Use DB constraints/transactions where possible",
+        "Add concurrency test scenario"
+      ]
+    },
+    {
+      "risk": "Admin security flaws",
+      "impact": "High",
+      "mitigation": [
+        "JWT protection from Sprint-03",
+        "Rate limit login and booking endpoints",
+        "Audit log sensitive actions"
+      ]
+    },
+    {
+      "risk": "Poor performance of availability endpoint",
+      "impact": "Medium",
+      "mitigation": [
+        "Indexing by tenant+date early",
+        "Redis cache for availability",
+        "Use Dapper for heavy queries if needed"
+      ]
+    }
+  ],
+  "release_strategy": {
+    "milestones": [
+      {
+        "name": "Milestone 1: Working Public Demo",
+        "sprints": ["SPRINT-00", "SPRINT-01"],
+        "definition": "Tenant landing + services visible for a demo tenant."
+      },
+      {
+        "name": "Milestone 2: Real Product Core",
+        "sprints": ["SPRINT-02"],
+        "definition": "End-to-end booking with conflict prevention."
+      },
+      {
+        "name": "Milestone 3: Sellable Admin System",
+        "sprints": ["SPRINT-03", "SPRINT-04"],
+        "definition": "Admin can manage appointments, services, working hours."
+      },
+      {
+        "name": "Milestone 4: Industry Adaptation",
+        "sprints": ["SPRINT-05"],
+        "definition": "Theme + dynamic booking form schema per tenant."
+      },
+      {
+        "name": "Milestone 5: Production Demo Link",
+        "sprints": ["SPRINT-09", "SPRINT-10"],
+        "definition": "Deployed product with multi-industry demos and documentation."
+      }
+    ]
+  }
+}

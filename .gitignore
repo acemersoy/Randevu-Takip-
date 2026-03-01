@@ -1,0 +1,52 @@
+# .gitignore for RandevuTakip (BookPilot)
+
+## .NET Core
+bin/
+obj/
+*.user
+*.userosscache
+*.sln.doccache
+
+## Node.js / Next.js
+node_modules/
+.next/
+out/
+build/
+.next-env.d.ts
+.DS_Store
+*.local
+.env
+.env*.local
+
+## OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+## IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+.ntvs_analysis.dat
+*.suo
+*.user
+*.userosscache
+*.sln.doccache
+*.suo
+
+## Database
+*.db
+*.sqlite
+
+## Logs
+*.log
+_logs/
+logs/
+backend_log.txt
+backend_logs_utf8_latest.txt
+latest_err.txt
+test_results.txt
+test_results.json
+test_results_final.txt
+test_results_utf8.txt
