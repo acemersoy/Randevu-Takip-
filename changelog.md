@@ -1,5 +1,14 @@
 # RandevuTakip (BookPilot) - Değişiklik Günlüğü (Changelog)
 
+## [UI/UX Redesign] - Humanized & Premium Interface - *TAMAMLANDI*
+
+- **Tipografi Değişimi:** Uygulamanın global fontu standart Inter/Arial yerine, daha premium ve modern duran Google Font `Plus Jakarta Sans` ile değiştirildi.
+- **İkonografi:** Standart Lucide ikonları tamamen kaldırılarak, yerine daha karakterli ve belirgin olan `Phosphor Icons` kütüphanesi entegre edildi.
+- **Ana Sayfa (Landing Page) Revizyonu:** Doctris tarzı asimetrik tasarıma geçildi. Kullanıcının sağladığı özel görsel Hero bölümüne eklendi. "Uzman Kadromuz" bölümü için gerçekçi (mock) insan yüzleri (pravatar) entegre edildi ve en alta 3 adet sosyal kanıt (Testimonial/Yorum) kartı konuldu.
+- **Randevu Sihirbazı (Booking Page):** Siyah, kalın `border` yapıları kaldırılarak yerine çok hafif gölgeli (soft shadow) ve yuvarlak hatlı (`rounded-[2rem]`) ferah kart tasarımları getirildi. Arka plana rahatlatıcı 'Soft Blob' renkleri yerleştirildi.
+- **Hizmet Kataloğu:** `/services` sayfası yeniden tasarlanarak her bir hizmet kartının tepesine dinamik (ID'ye göre hashlenmiş) yüksek kaliteli Unsplash fotoğraf kapağı (Cover Image) eklendi.
+- **Mikro Etkileşimler:** Ana ekran girişlerine, hizmet kartlarına ve randevu butonlarına `framer-motion` kütüphanesi ile yumuşak geliş (staggered) ve üzerine gelince büyüme (hover/tap) animasyonları kodlandı.
+
 ## [Phase 6 / Sprint 10] - Productization & Sales Kit - *TAMAMLANDI*
 
 - **Multi-Industry Demos**: Veritabanı seed işlemine üç farklı sektör (Diş Hekimi, Avukat, Güzellik Salonu) eklendi. Her birine özel renk temaları (`ThemeJson`) ve dinamik randevu formları (`BookingFormSchema`) tanımlandı.

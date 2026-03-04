@@ -1,0 +1,3190 @@
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.5:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.5:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.5:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.5:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.5:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.5:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
+
+> frontend@0.1.0 start
+> next start
+
+▲ Next.js 16.1.6
+- Local:         http://localhost:3000
+- Network:       http://172.19.0.6:3000
+
+✓ Starting...
+Error: "next start" does not work with "output: export" configuration. Use "npx serve@latest out" instead.
+    at ignore-listed frames
