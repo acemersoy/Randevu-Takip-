@@ -1053,6 +1053,96 @@
           ]
         }
       ]
+    },
+    {
+      "sprint_id": "SPRINT-11",
+      "name": "Advanced Analytics & Dashboard",
+      "goal": "Provide business owners with visual insights into their revenue and booking performance.",
+      "why_now": "Data-driven decisions add significant value to business owners and make the product more 'Enterprise' ready.",
+      "deliverables": [
+        "Financial summary aggregation API",
+        "Interactive charts (Revenue, Service popularity)",
+        "Export reports (CSV/PDF)"
+      ],
+      "stories": [
+        {
+          "story_id": "S11-01",
+          "epic_id": "EPIC-04",
+          "title": "Visual Reporting Dashboard",
+          "tasks": [
+            {
+              "task_id": "S11-01-T1",
+              "name": "Backend: Aggregate stats for revenue and booking counts",
+              "estimate": "M"
+            },
+            {
+              "task_id": "S11-01-T2",
+              "name": "Frontend: Implement Recharts dashboard in Admin panel",
+              "estimate": "M"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sprint_id": "SPRINT-12",
+      "name": "External Integrations (Sync & Notify)",
+      "goal": "Connect with external ecosystems like Google Calendar and provide SMS notifications.",
+      "why_now": "Integration with existing tools is a key selling point for professional services.",
+      "deliverables": [
+        "Google Calendar One-way Sync",
+        "SMS Notification Provider (Twilio/Provider abstraction)",
+        "WhatsApp notification pilot"
+      ],
+      "stories": [
+        {
+          "story_id": "S12-01",
+          "epic_id": "EPIC-06",
+          "title": "Ecosystem Connectivity",
+          "tasks": [
+            {
+              "task_id": "S12-01-T1",
+              "name": "Connect API with Google Calendar API (OAuth + Sync)",
+              "estimate": "L"
+            },
+            {
+              "task_id": "S12-01-T2",
+              "name": "Add SMS provider support to NotificationService",
+              "estimate": "M"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sprint_id": "SPRINT-13",
+      "name": "Advanced UX & Calendar Interactivity",
+      "goal": "Modernize the admin interface with high-end scheduling tools.",
+      "why_now": "UX efficiency directly impacts staff productivity and perceived product premiumness.",
+      "deliverables": [
+        "FullCalendar.io integration in Admin",
+        "Drag-and-drop rescheduling",
+        "Multi-staff timeline view"
+      ],
+      "stories": [
+        {
+          "story_id": "S13-01",
+          "epic_id": "EPIC-04",
+          "title": "Pro Scheduling UX",
+          "tasks": [
+            {
+              "task_id": "S13-01-T1",
+              "name": "Implement interactive calendar view (Weekly/Daily)",
+              "estimate": "L"
+            },
+            {
+              "task_id": "S13-01-T2",
+              "name": "Enable drag-and-drop status/time updates",
+              "estimate": "M"
+            }
+          ]
+        }
+      ]
     }
   ],
   "risk_management": [

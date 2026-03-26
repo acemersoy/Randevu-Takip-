@@ -33,7 +33,7 @@ services:
     environment:
       - ConnectionStrings__DefaultConnection=Host=db;Database=randevutakip_db;Username=admin;Password=password123
       - ConnectionStrings__Redis=redis:6379
-      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_ENVIRONMENT=Development
     depends_on:
       - db
       - redis

@@ -16,12 +16,24 @@ public class BookingService : IBookingService
 {
     private readonly AppDbContext _context;
     private readonly IEmailService _emailService;
+    private readonly INotificationProvider _notificationProvider;
+    private readonly GoogleCalendarService _googleCalendarService;
+    private readonly ZoomService _zoomService;
     private readonly IConnectionMultiplexer _redis;
 
-    public BookingService(AppDbContext context, IEmailService emailService, IConnectionMultiplexer redis)
+    public BookingService(
+        AppDbContext context, 
+        IEmailService emailService, 
+        INotificationProvider notificationProvider,
+        GoogleCalendarService googleCalendarService,
+        ZoomService zoomService,
+        IConnectionMultiplexer redis)
     {
         _context = context;
         _emailService = emailService;
+        _notificationProvider = notificationProvider;
+        _googleCalendarService = googleCalendarService;
+        _zoomService = zoomService;
         _redis = redis;
     }
 
@@ -284,16 +296,47 @@ public class BookingService : IBookingService
             };
 
             _context.Appointments.Add(appointment);
+            
+            // --- External Integrations ---
+
+            // 1. Zoom Meeting (if online service)
+            if (service.IsOnline)
+            {
+                var zoomResult = await _zoomService.CreateMeetingAsync(
+                    $"{service.Name}: {appointment.CustomerName}",
+                    startAt,
+                    service.DurationMinutes,
+                    tenant.ZoomConfigJson
+                );
+
+                if (zoomResult != null)
+                {
+                    appointment.ZoomMeetingUrl = zoomResult.JoinUrl;
+                    appointment.ZoomMeetingId = zoomResult.MeetingId;
+                }
+            }
+
             await _context.SaveChangesAsync();
 
-            // Sadece bu randevuya özel Cache temizlemesi yapabiliriz (opsiyonel ama sağlıklı)
-            await redisDb.KeyDeleteAsync($"Avail_{slug}_{service.Id}_{slotDay:yyyyMMdd}_{assignedStaffId}");
-            await redisDb.KeyDeleteAsync($"Avail_{slug}_{service.Id}_{slotDay:yyyyMMdd}_null");
+            // 2. Google Takvim Senkronizasyonu
+            _ = _googleCalendarService.SyncAppointmentAsync(
+                $"{request.CustomerName} - {service.Name}",
+                startAt,
+                endAt,
+                $"Müşteri Notu: {request.ExtraJson} {(appointment.ZoomMeetingUrl != null ? "\nZoom Link: " + appointment.ZoomMeetingUrl : "")}",
+                tenant.GoogleCalendarConfigJson
+            );
 
-            // Müşteriye bildirim e-postası
+            // --- Notifications ---
+
+            // 3. Müşteriye bildirim e-postası
             if (!string.IsNullOrEmpty(request.CustomerEmail))
             {
                 var dateStr = startAt.ToLocalTime().ToString("dd.MM.yyyy HH:mm");
+                var zoomHtml = appointment.ZoomMeetingUrl != null 
+                    ? $"<p><strong>Zoom Toplantı Linki:</strong> <a href='{appointment.ZoomMeetingUrl}'>{appointment.ZoomMeetingUrl}</a></p>" 
+                    : "";
+
                 var subject = $"{tenant.Name} - Randevu Talebiniz Alındı";
                 var body = $@"
                     <div style='font-family: Arial, sans-serif; padding: 20px; color: #333;'>
@@ -304,6 +347,7 @@ public class BookingService : IBookingService
                             <li><strong>Hizmet:</strong> {service.Name}</li>
                             <li><strong>Tarih / Saat:</strong> {dateStr}</li>
                         </ul>
+                        {zoomHtml}
                         <p>Randevunuz işletme yöneticileri tarafından onaylandıktan sonra size tekrar bilgi vereceğiz.</p>
                         <hr style='border: 1px solid #eee; my-4;' />
                         <p style='font-size: 12px; color: #888;'>Bu mail otomatik olarak gönderilmiştir. Lütfen cevaplamayınız.</p>
@@ -312,7 +356,20 @@ public class BookingService : IBookingService
                 _ = _emailService.SendEmailAsync(request.CustomerEmail, subject, body, tenant.SmtpJson);
             }
 
-            // Admin bilgilendirme
+            // 4. SMS / WhatsApp Bildirimi (Müşteriye)
+            if (!string.IsNullOrEmpty(request.CustomerPhone))
+            {
+                var zoomSuffix = appointment.ZoomMeetingUrl != null ? $" Zoom: {appointment.ZoomMeetingUrl}" : "";
+                var smsMessage = $"{tenant.Name}: Randevunuz alındı ({startAt.ToLocalTime():dd.MM.yyyy HH:mm}).{zoomSuffix} Onay bekliyor.";
+                
+                // SMS gönder
+                _ = _notificationProvider.SendSmsAsync(request.CustomerPhone, smsMessage, tenant.NotificationConfigJson);
+                
+                // WhatsApp gönder (opsiyonel, konfigürasyona bağlı olarak burada da tetiklenebilir)
+                _ = _notificationProvider.SendWhatsAppAsync(request.CustomerPhone, smsMessage, tenant.NotificationConfigJson);
+            }
+
+            // 5. Admin bilgilendirme
             var owners = await _context.Admins
                 .Where(a => a.TenantId == tenant.Id && a.Role == "Owner")
                 .Select(a => a.Email)
@@ -340,6 +397,10 @@ public class BookingService : IBookingService
                     _ = _emailService.SendEmailAsync(ownerEmail, adminSubject, adminBody, tenant.SmtpJson);
                 }
             }
+
+            // Sadece bu randevuya özel Cache temizlemesi yapabiliriz (opsiyonel ama sağlıklı)
+            await redisDb.KeyDeleteAsync($"Avail_{slug}_{service.Id}_{slotDay:yyyyMMdd}_{assignedStaffId}");
+            await redisDb.KeyDeleteAsync($"Avail_{slug}_{service.Id}_{slotDay:yyyyMMdd}_null");
 
             return appointment;
         }

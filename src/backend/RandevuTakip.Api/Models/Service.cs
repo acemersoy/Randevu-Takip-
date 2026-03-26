@@ -24,6 +24,7 @@ public class Service
     public decimal Price { get; set; }
 
     public bool IsActive { get; set; } = true;
+    public bool IsOnline { get; set; } = false;
 
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 

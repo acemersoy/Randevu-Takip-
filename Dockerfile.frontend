@@ -6,15 +6,20 @@ WORKDIR /app
 COPY src/frontend/package*.json ./
 RUN npm install
 
-# Build the app
+# Copy source and build
 COPY src/frontend/ ./
 RUN npm run build
 
-# Final Stage
+# Production Stage
 FROM node:20-alpine
 WORKDIR /app
-RUN npm install -g serve
-COPY --from=build /app/out ./out
+
+# Copy necessary files for runner
+COPY --from=build /app/package*.json ./
+COPY --from=build /app/.next ./.next
+COPY --from=build /app/public ./public
+COPY --from=build /app/node_modules ./node_modules
 
 EXPOSE 3000
-CMD ["serve", "-s", "out", "-l", "3000"]
+ENV NODE_ENV=production
+CMD ["npm", "run", "start"]

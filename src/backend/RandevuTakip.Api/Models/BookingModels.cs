@@ -65,9 +65,13 @@ public class Appointment
     public string? CustomerEmail { get; set; }
 
     public string Status { get; set; } = "Pending"; // Pending, Confirmed, Cancelled, Completed
-
+ 
     public string ExtraJson { get; set; } = "{}"; // Dinamik form verileri buraya
-
+ 
+    public string? ZoomMeetingUrl { get; set; }
+ 
+    public string? ZoomMeetingId { get; set; }
+ 
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
     [ForeignKey("TenantId")]

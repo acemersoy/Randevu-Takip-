@@ -262,14 +262,15 @@ public class AdminController : ControllerBase
     {
         var tenantId = Guid.Parse(User.FindFirst("TenantId")?.Value!);
 
-        // Gelir Özeti (Bu Ay, Geçen Ay, Toplam)
         var today = DateTime.SpecifyKind(DateTime.UtcNow.Date, DateTimeKind.Utc);
         var thisMonthStart = DateTime.SpecifyKind(new DateTime(today.Year, today.Month, 1), DateTimeKind.Utc);
         var lastMonthStart = thisMonthStart.AddMonths(-1);
+        var thirtyDaysAgo = today.AddDays(-30);
 
         var allCompleted = await _context.Appointments
             .Where(a => a.TenantId == tenantId && (a.Status == "Confirmed" || a.Status == "Completed"))
             .Include(a => a.Service)
+            .Include(a => a.Staff)
             .ToListAsync();
 
         var thisMonthRevenue = allCompleted.Where(a => a.StartAt >= thisMonthStart).Sum(a => a.Service.Price);
@@ -288,12 +289,41 @@ public class AdminController : ControllerBase
             .OrderByDescending(x => x.Revenue)
             .ToList();
 
+        // Personel Performansı (YENİ)
+        var staffPerformance = allCompleted
+            .GroupBy(a => new { a.StaffId, StaffName = a.Staff != null ? a.Staff.Name : "Genel" })
+            .Select(g => new
+            {
+                StaffName = g.Key.StaffName,
+                AppointmentCount = g.Count(),
+                Revenue = g.Sum(a => a.Service.Price)
+            })
+            .OrderByDescending(x => x.Revenue)
+            .ToList();
+
+        // Son 30 Günlük Günlük Gelir Geçmişi (YENİ)
+        var dailyHistory = new List<object>();
+        for (int i = 29; i >= 0; i--)
+        {
+            var date = today.AddDays(-i);
+            var dayEnd = date.AddDays(1);
+            var dayAppointments = allCompleted.Where(a => a.StartAt >= date && a.StartAt < dayEnd).ToList();
+            
+            dailyHistory.Add(new { 
+                Date = date.ToString("yyyy-MM-dd"), 
+                Revenue = dayAppointments.Sum(a => a.Service.Price),
+                Count = dayAppointments.Count 
+            });
+        }
+
         return Ok(new
         {
             ThisMonthRevenue = thisMonthRevenue,
             LastMonthRevenue = lastMonthRevenue,
             TotalRevenue = totalRevenue,
-            ServicePerformance = servicePerformance
+            ServicePerformance = servicePerformance,
+            StaffPerformance = staffPerformance,
+            DailyHistory = dailyHistory
         });
     }
 
@@ -496,7 +526,9 @@ public class AdminController : ControllerBase
             tenant.Industry,
             tenant.ThemeJson,
             tenant.BookingFormSchema,
-            tenant.SmtpJson
+            tenant.SmtpJson,
+            tenant.NotificationConfigJson,
+            tenant.GoogleCalendarConfigJson
         });
     }
 
@@ -515,6 +547,8 @@ public class AdminController : ControllerBase
         tenant.ThemeJson = request.ThemeJson;
         tenant.BookingFormSchema = request.BookingFormSchema;
         tenant.SmtpJson = request.SmtpJson;
+        tenant.NotificationConfigJson = request.NotificationConfigJson;
+        tenant.GoogleCalendarConfigJson = request.GoogleCalendarConfigJson;
 
         await _context.SaveChangesAsync();
         await LogActionAsync("UpdateSettings", "Tenant", tenantId.ToString());
@@ -656,6 +690,8 @@ public class SettingsRequest
     public string ThemeJson { get; set; } = "{}";
     public string BookingFormSchema { get; set; } = "[]";
     public string? SmtpJson { get; set; }
+    public string? NotificationConfigJson { get; set; }
+    public string? GoogleCalendarConfigJson { get; set; }
 }
 
 public class StaffRequest

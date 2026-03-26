@@ -1,0 +1,44 @@
+﻿--- Available Slots (Monday) ---
+--- Booking 10:00 (Should go to Personel A) ---
+{
+    "id":  "d95407a0-5232-411d-82c3-05498e7727db",
+    "message":  "Randevunuz başarıyla oluşturuldu."
+}
+--- Booking 14:00 (Should go to Personel B) ---
+{
+    "id":  "b9f8ef00-6327-42e9-b0c0-136424d33056",
+    "message":  "Randevunuz başarıyla oluşturuldu."
+}
+--- Final Assignments Verification ---
+[
+    {
+        "Customer":  "API Test Customer 2",
+        "Time":  null,
+        "StaffName":  null
+    },
+    {
+        "Customer":  "API Test Customer 2",
+        "Time":  null,
+        "StaffName":  null
+    },
+    {
+        "Customer":  "API Test Customer 2",
+        "Time":  null,
+        "StaffName":  null
+    },
+    {
+        "Customer":  "API Test Customer 1",
+        "Time":  null,
+        "StaffName":  null
+    },
+    {
+        "Customer":  "API Test Customer 1",
+        "Time":  null,
+        "StaffName":  null
+    },
+    {
+        "Customer":  "API Test Customer 1",
+        "Time":  null,
+        "StaffName":  null
+    }
+]

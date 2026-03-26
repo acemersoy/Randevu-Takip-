@@ -25,6 +25,12 @@ public class Tenant
 
     public string? SmtpJson { get; set; } // { "host": "smtp.gmail.com", "port": 587, "enableSsl": true, "username": "...", "password": "...", "fromName": "...", "fromEmail": "..." }
 
+    public string? NotificationConfigJson { get; set; } // { "twilioSid": "...", "twilioAuthToken": "...", "fromNumber": "..." }
+
+    public string? GoogleCalendarConfigJson { get; set; } // { "clientId": "...", "clientSecret": "...", "authCode": "..." }
+ 
+    public string? ZoomConfigJson { get; set; } // { "clientId": "...", "clientSecret": "...", "accountId": "..." }
+ 
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
     public bool IsActive { get; set; } = true;

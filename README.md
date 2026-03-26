@@ -49,7 +49,7 @@ En hızlı kurulum şekli Docker kullanmaktır. Hiçbir yerel bağımlılık (Po
     - **Güzellik & Kuaför (Salon)**: `http://localhost:3000/salon` (Admin: `admin@salon.com` / `admin123`)
 
     - **Geriye Dönük Varsayılan Admin**: `admin@demo.com` / `admin123`
-    - **Backend API (Swagger)**: `http://localhost:5032/swagger`
+    - **Backend API (Scalar)**: `http://localhost:5032/scalar/v1`
 
 ---
 

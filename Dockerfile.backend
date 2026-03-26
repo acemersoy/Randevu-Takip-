@@ -1,8 +1,7 @@
-# Build Stage
+
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /src
 
-# Copy csproj and restore
 COPY ["src/backend/RandevuTakip.Api/RandevuTakip.Api.csproj", "src/backend/RandevuTakip.Api/"]
 RUN dotnet restore "src/backend/RandevuTakip.Api/RandevuTakip.Api.csproj"
 
@@ -11,7 +10,7 @@ COPY . .
 WORKDIR "/src/src/backend/RandevuTakip.Api"
 RUN dotnet publish "RandevuTakip.Api.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
-# Final Stage
+
 FROM mcr.microsoft.com/dotnet/aspnet:9.0
 WORKDIR /app
 COPY --from=build /app/publish .

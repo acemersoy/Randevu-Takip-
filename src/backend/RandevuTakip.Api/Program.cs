@@ -10,6 +10,7 @@ using RandevuTakip.Api.Services;
 using System.Text.Json.Serialization;
 using StackExchange.Redis;
 using Serilog;
+using Scalar.AspNetCore;
 
 Log.Logger = new LoggerConfiguration()
     .Enrich.FromLogContext()
@@ -33,6 +34,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddScoped<IBookingService, BookingService>();
 builder.Services.AddTransient<IEmailService, SmtpEmailService>();
+builder.Services.AddTransient<INotificationProvider, TwilioSmsProvider>();
+builder.Services.AddScoped<GoogleCalendarService>();
+builder.Services.AddHttpClient<ZoomService>();
 builder.Services.AddMemoryCache();
 
 // Redis Configuration
@@ -72,7 +76,15 @@ var app = builder.Build();
 app.UseMiddleware<CorrelationIdMiddleware>();
 app.UseMiddleware<ExceptionMiddleware>();
 app.UseMiddleware<RateLimitingMiddleware>();
-if (app.Environment.IsDevelopment()) app.MapOpenApi();
+
+// Swagger her ortamda açık olsun
+// Swagger (Scalar) her ortamda açık olsun
+app.MapOpenApi();
+app.MapScalarApiReference(options => 
+{
+    options.WithTitle("BookPilot API V1");
+});
+
 app.UseCors("AllowAll");
 app.UseAuthentication();
 app.UseAuthorization();
@@ -152,6 +164,24 @@ static void SeedDatabase(WebApplication app)
             Industry = "Salon",
             ThemeJson = "{\"primary\": \"#ec4899\", \"borderRadius\": \"2rem\"}",
             BookingFormSchema = "[{\"name\": \"hairLength\", \"type\": \"select\", \"label\": \"Saç Uzunluğu\", \"options\": [\"Kısa\", \"Orta\", \"Uzun\"], \"required\": false}, {\"name\": \"specialRequest\", \"type\": \"textarea\", \"label\": \"Özel İstekleriniz\", \"required\": false}]",
+            CreatedAt = DateTime.UtcNow,
+            IsActive = true
+        });
+        db.SaveChanges();
+    }
+
+    // Tenant: test-business
+    var testTid = Guid.Parse("d0e3a6a1-a6a1-4a6a-a6a1-a6a1a6a1a6a4");
+    if (!db.Tenants.Any(t => t.Slug == "test-business"))
+    {
+        db.Tenants.Add(new Tenant
+        {
+            Id = testTid,
+            Slug = "test-business",
+            Name = "Test İşletmesi",
+            Industry = "Test",
+            ThemeJson = "{\"primary\": \"#4b5563\", \"borderRadius\": \"1.5rem\"}",
+            BookingFormSchema = "[{\"name\": \"note\", \"type\": \"textarea\", \"label\": \"Notunuz\", \"required\": false}]",
             CreatedAt = DateTime.UtcNow,
             IsActive = true
         });
@@ -335,6 +365,23 @@ static void SeedDatabase(WebApplication app)
         if (!db.StaffServices.Any(ss => ss.StaffId == m.Sid && ss.ServiceId == m.Svcid))
             db.StaffServices.Add(new StaffService { Id = Guid.NewGuid(), StaffId = m.Sid, ServiceId = m.Svcid });
     }
+    db.SaveChanges();
+
+    // Services for test-business
+    var ts1 = Guid.Parse("b1e3a6a1-a6a1-4a6a-a6a1-a6a1a6a1b6a1");
+    if (!db.Services.Any(s => s.Id == ts1))
+        db.Services.Add(new Service { Id = ts1, TenantId = testTid, Name = "Test Hizmeti 1", Description = "Deneme amaçlı hizmet.", DurationMinutes = 30, Price = 100m, IsActive = true, CreatedAt = DateTime.UtcNow });
+
+    // Staff for test-business
+    var tstaff1 = Guid.Parse("c0e3a6a1-a6a1-4a6a-a6a1-a6a1a6a1b6a1");
+    if (!db.Staff.Any(s => s.Id == tstaff1))
+        db.Staff.Add(new Staff { Id = tstaff1, TenantId = testTid, Name = "Test Personel 1", Title = "Kıdemli Test Uzmanı", Email = "test@test.com", IsActive = true, CreatedAt = DateTime.UtcNow });
+
+    db.SaveChanges();
+
+    if (!db.StaffServices.Any(ss => ss.StaffId == tstaff1 && ss.ServiceId == ts1))
+        db.StaffServices.Add(new StaffService { Id = Guid.NewGuid(), StaffId = tstaff1, ServiceId = ts1 });
+
     db.SaveChanges();
 
     // Sample Appointments
